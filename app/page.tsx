@@ -1068,7 +1068,7 @@ export default function KanaStream() {
                             ${tile.status === 'correct' ? 'scale-110 z-10' : 'scale-100 z-0'}
                         `}
                         style={{ 
-                            transform: `translate(${tile.x}px, ${tile.y}px)`,
+                            transform: `translate(${Math.round(tile.x)}px, ${Math.round(tile.y)}px)`,
                             width: `${size}px`,
                             height: `${size}px`,
                             // Reset top/left since we use translate for performance
